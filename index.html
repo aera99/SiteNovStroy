@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Главная | Novstroy</title>
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <title>Novstroy | Главная</title>
+</head>
+<body>
+<header id="header" class="header">
+    <div class="container">
+        <div class="navigation">
+            <a href="/" class="navigation__logo"><img src="img/Logo.svg" alt="Logo" class="navigation__img"></a>
+            <nav id="nav">
+                <ul class="menu" id="menu">
+                    <li class="menu__item"> <a href="#" class="menu__link">О нас</a> </li>
+                    <li class="menu__item"> <a href="#" class="menu__link">Строительство</a>
+                    <ul class="menu__submenu">
+                        <li class="menu__item"> <a href="build.html" class="menu__link">Дом из кирпича</a> </li>
+                        <li class="menu__item"> <a href="#" class="menu__link">Дом из сибита</a> </li>
+                        <li class="menu__item"> <a href="#" class="menu__link">Дом из блока</a> </li>
+                    </ul>
+                    </li>
+                    <li class="menu__item"> <a href="#" class="menu__link">Готовые проекты</a> </li>
+                    <li class="menu__item"> <a href="#" class="menu__link">Контакты</a> </li>
+                </ul>
+                
+            </nav>
+            <div class="phone navigation__phone">
+                <div>
+                    <img src="img/phone.svg" alt="Phone" class="phone__icon">
+                </div>
+                <div class="wrap_phone">
+                    <a href="tel:+7 918 439 00 32" class="phone__tel">
+                        +7 918 439 00 32
+                    </a>
+                </div>
+            </div>
+            <button id="btn-open" class="btn navigation__btn" type="submit">
+                Заказать звонок
+            </button>
+            <button id="btn-burger" class="hamburger">
+                <i class="menuIcon material-icons">menu</i>
+                <i class="closeIcon material-icons">close</i>
+            </button>
+        </div>
+    </div>
+
+    
+</header>
+
+<div id="wrapper-modal">
+    <div id="overlay"></div>
+    <div id="modal-window">
+        <div id="btn-close" class="modal__close">
+            <img src="img/exit.svg" alt="">
+        </div>
+        <div class="content">
+            <form action="/" class="form modal__form">
+                <h2 class="modal__title">Форма обратного звонка</h2>
+                <p class="modal__text">
+                    Оставьте пожалуйста свое имя и телефон и мы свяжемся с вами в течении дня
+                </p>
+                <div class=" modal__item">
+                    <input id="name" class="modal__input  " type="text" placeholder=" ">
+                    <label class="modal__label  " for="name">Имя</label>
+                </div>
+                <div class="modal__item">
+                    <input id="tel" class="modal__input  " type="text" placeholder=" ">
+                    <label class="modal__label  " for="tel">Телефон</label>
+                </div>
+                <p class="form__subtitle modal__subtitle">Нажимая на кнопку вы даете согласие на обработку персональных данных и соглашаетесь с <b>политикой конфиденциальности</b></p>
+                <button class="btn modal__btn" type="submit">Заказать звонок</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<section id="offer" class="offer">
+    <div class="container">
+        <div class="offer__wrapper">
+            <h1 class="offer__title">Строительство каменных домов «под ключ»</h1>
+            <p class="offer__text">При заказе дома от 150 метров баня в подарок</p>
+            <button class="btn offer__btn" type="submit">
+                Смотреть каталог
+            </button>
+        </div>
+        
+    </div>
+</section>
+
+<section id="about" class="about">
+    <div class="container">
+        <h2 class="about__title">О НАС</h2>
+        <div class="about__content">
+            <div class="about__left">
+                <p class="left__text">
+                    Наша компания «NovStroy» более 10 лет специализируется на строительстве домов и коттеджей под ключ в Новосибирске. 
+                </p>
+                <p class="left__text">
+                    Мы используем все существующие на данный момент строительные материалы, преимущественно сооружаем дома из кирпича, сибита и пеноблоков. 
+                </p>
+                <p class="left__text">
+                    К каждому клиенту мы находим индивидуальный подход, сотрудничая с нашей строительной компанией вы будете уверенны что все ваши желания сбудутся.
+                </p>
+                <div class="about__link">
+                    <a class="link__item" href="#">Подробнее</a>
+                    <a class="link__item" href="#">Наши проекты</a>
+                </div>
+            </div>
+            <div class="about__mid">
+                <div class="about__advent">
+                    <img class="about__img" src="img/hand.svg" alt="Поэтапная оплата">
+                    <div class="advent__wrapper">
+                        <h4 class="advent__title">Поэтапная оплата</h4>
+                        <p class="advent__text">Фиксированная оплата каждого этапа строительства</p>
+                    </div>
+                </div>
+                <div class="about__advent">
+                    <img class="about__img" src="img/transfer.svg" alt="Трейд Ин">
+                    <div class="advent__wrapper">
+                        <h4 class="advent__title">Трейд Ин</h4>
+                        <p class="advent__text">Обмен любого движимого и недвижимого имущества на дом</p>
+                    </div>
+                </div>
+                <div class="about__advent">
+                    <img class="about__img" src="img/bank.svg" alt="Поэтапная оплата">
+                    <div class="advent__wrapper">
+                        <h4 class="advent__title">Ипотека</h4>
+                        <p class="advent__text">Оказываем помощь в получении кредита на строительство</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about__right">
+                <img class="right__img" src="img/about__home.jpg" alt="Поэтапная оплата">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="services" class="services">
+    <div class="container">
+        <h2 class="services__title">ЧТО МЫ СТРОИМ</h2>
+        <div class="services__content">
+            <div class="services__card">
+                <img src="img/kirp.jpg" alt="Дом из кирпича" class="home__img">
+                <div class="card__content">
+                    <h3 class="card__title">Дом из кирпича</h3>
+                    <p class="card__text">Капитальное сооружение, пригодное для жилья, размещения производственных, и хозяйственных помещений</p>
+                    
+                </div>
+                <a class="card__item" href="build.html">Подробнее</a>
+            </div>
+            <div class="services__card">
+                <img src="img/sibit.jpg" alt="Дом из сибита" class="home__img">
+                <div class="card__content">
+                    <h3 class="card__title">Дом из сибита</h3>
+                    <p class="card__text">Экологически чистые дома. 
+                        В производстве этого  материала не используются какие-либо токсичные вещества</p>
+                </div>
+                <a class="card__item" href="#">Подробнее</a>
+            </div>
+            <div class="services__card">
+                <img src="img/block.jpg" alt="Дом из блоков" class="home__img">
+                <div class="card__content">
+                    <h3 class="card__title">Дом из блоков</h3>
+                    <p class="card__text">Быстровозводимое строение, экономичное по затратам, долговечное в эксплуатации, удобное и комфортное для проживания</p>
+                    
+                </div>
+                <a class="card__item" href="#">Подробнее</a>
+            </div>
+            <div class="services__card">
+                <img src="img/commercial.png" alt="Коммерческая недвижимость" class="home__img">
+                <div class="card__content">
+                    <h3 class="card__title">Коммерческая недвижимость</h3>
+                    <p class="card__text">Возведение помещений торгового и складского типов</p>
+                    
+                </div>
+                <a class="card__item" href="#">Подробнее</a>
+            </div>
+            <div class="services__card">
+                <img src="img/bathhouse.png" alt="Бани" class="home__img">
+                <div class="card__content">
+                    <h3 class="card__title">Бани</h3>
+                    <p class="card__text">Конструкция, которая используется не только для купания, а и для целого комплекса водных процедур</p>
+                </div>
+                <a class="card__item" href="#">Подробнее</a>
+            </div>
+            <div class="services__card">
+                <img src="img/extra__services.png" alt="Дополнительные услуги" class="home__img">
+                <div class="card__content">
+                    <h3 class="card__title">Дополнительные услуги</h3>
+                    <p class="card__text">Заборы, бассейны, террасы, и другие виды услуг</p>
+                    
+                </div>
+                <a class="card__item" href="#">Подробнее</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="advantages" class="advantages">
+    <div class="container">
+        <h1 class="advantages__title">Достоинства каменных домов</h1>
+        <div class="advantages__content">
+            <div class="advantages__card">
+                <img src="img/chains.svg" alt="Прочность и долговечность" class="card__img">
+                <h4 class="list__title">Прочность и долговечность</h4>
+                <p class="list__text">Дома из камня по долговечности вне конкуренции с каркасными или деревянными постройками</p>
+            </div>
+            <div class="advantages__card">
+                <img src="img/shield.svg" alt="Высокие защитные свойства" class="card__img">
+                <h4 class="list__title">Высокие защитные свойства</h4>
+                <p class="list__text">Каменные строительные материалы надежно защищают основную конструкцию от неблагоприятных погодных воздействий</p>
+            </div>
+            <div class="advantages__card">
+                <img src="img/bricks.svg" alt="Красота и оригинальность" class="card__img">
+                <h4 class="list__title">Красота и оригинальность</h4>
+                <p class="list__text">Из камня можно выкладывать более сложные и оригинальные конструкции, создавать интересные архитектурные решения.</p>
+            </div>
+            <div class="advantages__card">
+                <img src="img/fire.svg" alt="Низкая теплопроводность" class="card__img">
+                <h4 class="list__title">Низкая теплопроводность</h4>
+                <p class="list__text">В каменном доме сохраняется комфортный температурный режим в любое время года</p>
+            </div>
+            <div class="advantages__card">
+                <img src="img/sound__wave.svg" alt="Высокая звукоизоляция" class="card__img">
+                <h4 class="list__title">Высокая звукоизоляция</h4>
+                <p class="list__text">Легко достигается за счет граммотной наружной и внутренней отделки</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="process" class="process">
+    <div class="container">
+        <div class="jobs">
+            <div class="jobs__left">
+                <h2 class="jobs__title">Процесс работы</h2>
+                <div class="jobs__accordeon">
+
+                    <div class="accordeon">
+                        <div class="accordeon__heading">
+                            <h4 class="accordeon__title">Звонок</h4>
+                            <div class="accordeon__icon"></div>
+                        </div>
+                        <div class="accordeon__content">
+                            <div class="accordeon__inner">
+                                <p class="accordeon__text">
+                                    На этом этапе мы отвечаем на ваши вопросы, обсуждая ваши потребности
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="accordeon ">
+                        <div class="accordeon__heading">
+                            <h4 class="accordeon__title">Выезд на замер</h4>
+                            <div class="accordeon__icon"></div>
+                        </div>
+                        <div class="accordeon__content">
+                            <p class="accordeon__text">
+                                На этом этапе мы отвечаем на ваши вопросы на ваши вопросы,  на ваши вопросы,  на ваши вопросы,  на ваши вопросы, , обсуждая ваши потребности2
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div class="accordeon ">
+                        <div class="accordeon__heading">
+                            <h4 class="accordeon__title">Заключение договора</h4>
+                            <div class="accordeon__icon"></div>
+                        </div>
+                        <div class="accordeon__content">
+                                <p class="accordeon__text">
+                                    На этом этапе мы отвечаем на ваши вопросы, обсуждая ваши потребности3
+                                </p>
+                        </div>
+                    </div>
+    
+                    <div class="accordeon ">
+                        <div class="accordeon__heading">
+                            <h4 class="accordeon__title">Начало строительства</h4>
+                            <div class="accordeon__icon"></div>
+                        </div>
+                        <div class="accordeon__content">
+                            <div class="accordeon__inner">
+                                <p class="accordeon__text">
+                                    На этом этапе мы отвечаем на ваши вопросы, обсуждая ваши потребности4
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="jobs__right">
+                <img class="jobs__img" href="" src="img/process_img.jpg" alt="Чертеж">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="popular" class="popular">
+    <div class="container">
+        <h2 class="popular__title">Популярные проекты</h2>
+        <div class="summary">
+            <div class="summary__item">
+                <img class="summary__img" src="img/pr1.jpg" alt="">
+                <div class="summary__wrapper">
+                    <h5 class="summary__subtitle">Кирпич</h5>
+                    <h4 class="summary__title">Проект «1»</h4>
+                </div>
+                
+                <div class="summary__overlay">
+                    <h5 class="summary__subtitle">Кирпич</h5>
+                    <h4 class="summary__title">Проект «1»</h4>
+                    <p class="summary__text">Дом с мансардой и панорамными окнами</p>
+                    <div class="summary__data">
+                        <div class="data__wrapper">
+                            <h4 class="data__title">
+                                Площадь:
+                            </h4> 
+                            <p class="data__text">85.4 m² </p>
+                        </div>
+                        <div class="data__wrapper">
+                            <h4 class="data__title">
+                                Цена:
+                            </h4> 
+                            <p class="data__text">2,5 млн ₽ </p>
+                        </div>
+                    </div>
+                    <a href="#" class="summary__link">Подробнее</a>
+                </div>
+            </div>
+            <div class="summary__item">
+                <img class="summary__img" src="img/pr1.jpg" alt="">
+                <div class="summary__wrapper">
+                    <h5 class="summary__subtitle">Кирпич</h5>
+                    <h4 class="summary__title">Проект «1»</h4>
+                </div>
+                
+                <div class="summary__overlay">
+                    
+                    <h5 class="summary__subtitle">Кирпич</h5>
+                    <h4 class="summary__title">Проект «1»</h4>
+                    <p class="summary__text">Дом с мансардой и панорамными окнами</p>
+                    <div class="summary__data">
+                        <div class="data__wrapper">
+                            <h4 class="data__title">
+                                Площадь:
+                            </h4> 
+                            <p class="data__text">85.4 m² </p>
+                        </div>
+                        <div class="data__wrapper">
+                            <h4 class="data__title">
+                                Цена:
+                            </h4> 
+                            <p class="data__text">2,5 млн ₽ </p>
+                        </div>
+                    </div>
+                    <a href="#" class="summary__link">Подробнее</a>
+                </div>
+            </div>
+            <div class="summary__item">
+                <img class="summary__img" src="img/pr1.jpg" alt="">
+                <div class="summary__wrapper">
+                    <h5 class="summary__subtitle">Кирпич</h5>
+                    <h4 class="summary__title">Проект «1»</h4>
+                </div>
+                
+                <div class="summary__overlay">
+                    
+                    <h5 class="summary__subtitle">Кирпич</h5>
+                    <h4 class="summary__title">Проект «1»</h4>
+                    <p class="summary__text">Дом с мансардой и панорамными окнами</p>
+                    <div class="summary__data">
+                        <div class="data__wrapper">
+                            <h4 class="data__title">
+                                Площадь:
+                            </h4> 
+                            <p class="data__text">85.4 m² </p>
+                        </div>
+                        <div class="data__wrapper">
+                            <h4 class="data__title">
+                                Цена:
+                            </h4> 
+                            <p class="data__text">2,5 млн ₽ </p>
+                        </div>
+                    </div>
+                    <a href="#" class="summary__link">Подробнее</a>
+                </div>
+            </div>
+            <div class="summary__item">
+                <img class="summary__img" src="img/pr1.jpg" alt="">
+                <div class="summary__wrapper">
+                    <h5 class="summary__subtitle">Кирпич</h5>
+                    <h4 class="summary__title">Проект «1»</h4>
+                </div>
+                
+                <div class="summary__overlay">
+                    
+                    <h5 class="summary__subtitle">Кирпич</h5>
+                    <h4 class="summary__title">Проект «1»</h4>
+                    <p class="summary__text">Дом с мансардой и панорамными окнами</p>
+                    <div class="summary__data">
+                        <div class="data__wrapper">
+                            <h4 class="data__title">
+                                Площадь:
+                            </h4> 
+                            <p class="data__text">85.4 m² </p>
+                        </div>
+                        <div class="data__wrapper">
+                            <h4 class="data__title">
+                                Цена:
+                            </h4> 
+                            <p class="data__text">2,5 млн ₽ </p>
+                        </div>
+                    </div>
+                    <a href="#" class="summary__link">Подробнее</a>
+                </div>
+            </div>
+            <div class="summary__item">
+                <img class="summary__img" src="img/pr1.jpg" alt="">
+                <div class="summary__wrapper">
+                    <h5 class="summary__subtitle">Кирпич</h5>
+                    <h4 class="summary__title">Проект «1»</h4>
+                </div>
+                
+                <div class="summary__overlay">
+                    
+                    <h5 class="summary__subtitle">Кирпич</h5>
+                    <h4 class="summary__title">Проект «1»</h4>
+                    <p class="summary__text">Дом с мансардой и панорамными окнами</p>
+                    <div class="summary__data">
+                        <div class="data__wrapper">
+                            <h4 class="data__title">
+                                Площадь:
+                            </h4> 
+                            <p class="data__text">85.4 m² </p>
+                        </div>
+                        <div class="data__wrapper">
+                            <h4 class="data__title">
+                                Цена:
+                            </h4> 
+                            <p class="data__text">2,5 млн ₽ </p>
+                        </div>
+                    </div>
+                    <a href="#" class="summary__link">Подробнее</a>
+                </div>
+            </div>
+            <div class="summary__item">
+                <img class="summary__img" src="img/pr1.jpg" alt="">
+                <div class="summary__wrapper">
+                    <h5 class="summary__subtitle">Кирпич</h5>
+                    <h4 class="summary__title">Проект «1»</h4>
+                </div>
+                
+                <div class="summary__overlay">
+                    
+                    <h5 class="summary__subtitle">Кирпич</h5>
+                    <h4 class="summary__title">Проект «1»</h4>
+                    <p class="summary__text">Дом с мансардой и панорамными окнами</p>
+                    <div class="summary__data">
+                        <div class="data__wrapper">
+                            <h4 class="data__title">
+                                Площадь:
+                            </h4> 
+                            <p class="data__text">85.4 m² </p>
+                        </div>
+                        <div class="data__wrapper">
+                            <h4 class="data__title">
+                                Цена:
+                            </h4> 
+                            <p class="data__text">2,5 млн ₽ </p>
+                        </div>
+                    </div>
+                    <a href="#" class="summary__link">Подробнее</a>
+                </div>
+            </div>
+            <div class="summary__item">
+                <img class="summary__img" src="img/pr1.jpg" alt="">
+                <div class="summary__wrapper">
+                    <h5 class="summary__subtitle">Кирпич</h5>
+                    <h4 class="summary__title">Проект «1»</h4>
+                </div>
+                
+                <div class="summary__overlay">
+                    
+                    <h5 class="summary__subtitle">Кирпич</h5>
+                    <h4 class="summary__title">Проект «1»</h4>
+                    <p class="summary__text">Дом с мансардой и панорамными окнами</p>
+                    <div class="summary__data">
+                        <div class="data__wrapper">
+                            <h4 class="data__title">
+                                Площадь:
+                            </h4> 
+                            <p class="data__text">85.4 m² </p>
+                        </div>
+                        <div class="data__wrapper">
+                            <h4 class="data__title">
+                                Цена:
+                            </h4> 
+                            <p class="data__text">2,5 млн ₽ </p>
+                        </div>
+                    </div>
+                    <a href="#" class="summary__link">Подробнее</a>
+                </div>
+            </div>
+            <div class="summary__item">
+                <img class="summary__img" src="img/pr1.jpg" alt="">
+                <div class="summary__wrapper">
+                    <h5 class="summary__subtitle">Кирпич</h5>
+                    <h4 class="summary__title">Проект «1»</h4>
+                </div>
+                
+                <div class="summary__overlay">
+                    
+                    <h5 class="summary__subtitle">Кирпич</h5>
+                    <h4 class="summary__title">Проект «1»</h4>
+                    <p class="summary__text">Дом с мансардой и панорамными окнами</p>
+                    <div class="summary__data">
+                        <div class="data__wrapper">
+                            <h4 class="data__title">
+                                Площадь:
+                            </h4> 
+                            <p class="data__text">85.4 m² </p>
+                        </div>
+                        <div class="data__wrapper">
+                            <h4 class="data__title">
+                                Цена:
+                            </h4> 
+                            <p class="data__text">2,5 млн ₽ </p>
+                        </div>
+                    </div>
+                    <a href="#" class="summary__link">Подробнее</a>
+                </div>
+            </div>
+        </div>
+        <div class="wrap">
+            <a href="#" class="link">Посмотреть все готовые проекты</a>
+        </div>
+        
+    </div>
+</section>
+
+<section id="gallery" class="gallery">
+    <div class="container">
+        <h2 class="gallery__title">Галерея</h2>
+        <div class="gallery__wrapper">
+            <img src="img/gal1.jpg" alt="BIGHOUSE" class="gallery__img_big">
+            <div class="gallery__inner">
+                <img src="img/gal1.jpg" class="gallery__img_mid" alt="">
+                <img src="img/gal1.jpg" class="gallery__img_mid" alt="">
+            </div>
+            <div class="gallery__inner">
+                <img src="img/gal1.jpg" class="gallery__img_small" alt="">
+                <img src="img/gal1.jpg" class="gallery__img_small" alt="">
+            </div>
+            <div class="gallery__inner">
+                <img src="img/gal1.jpg" class="gallery__img_small" alt="">
+                <img src="img/gal1.jpg" class="gallery__img_small" alt="">
+            </div>
+        </div>
+        <div class="wrap">
+            <a href="#" class="link">Посмотреть галлерею</a>
+        </div>
+    </div>
+</section>
+
+<section id="cta" class="cta">
+    <div class="container">
+        <h2 class="cta__title">Готовы обсудить проект?</h2>
+        <div class="cta__forms">
+            <form action="/" class="form">
+                <p class="form__text">
+                    Оставьте свой номер телефона и мы поможем вам с выбором дома
+                </p>
+                <div class="input__item">
+                    <input id="name" class="form__input" type="text" placeholder=" ">
+                    <label class="form__label" for="name">Имя</label>
+                </div>
+                <div class="input__item">
+                    <input id="tel" class="form__input" type="text" placeholder=" ">
+                    <label class="form__label" for="tel">Телефон</label>
+                </div>
+                
+
+                <p class="form__subtitle">Нажимая на кнопку вы даете согласие на обработку персональных данных и соглашаетесь с <b>политикой конфиденциальности</b></p>
+                <button class="btn form__btn" type="submit">Оставить заявку</button>
+            </form>
+            <img class="cta__img" src="img/formbg.jpg" alt="Небоскреб">
+        </div>
+    </div>
+</section>
+
+<footer id="footer" class="footer">
+    <div class="container">
+        
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

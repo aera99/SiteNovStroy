@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная | Novstroy</title>
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap"
+        rel="stylesheet">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <title>Novstroy | Главная</title>
+</head>
+
+<body>
+    <header id="header" class="header">
+        <div class="container">
+            <div class="navigation">
+                <a href="index.html" class="navigation__logo"><img src="img/Logo.svg" alt="Logo" class="navigation__img"></a>
+                <nav>
+                    <ul class="menu">
+                        <li class="menu__item"> <a href="#" class="menu__link">О нас</a> </li>
+                        <li class="menu__item"> <a href="#" class="menu__link">Строительство</a>
+                            <ul class="menu__submenu">
+                                <li class="menu__item"> <a href="build.html" class="menu__link">Дом из кирпича</a> </li>
+                                <li class="menu__item"> <a href="#" class="menu__link">Дом из сибита</a> </li>
+                                <li class="menu__item"> <a href="#" class="menu__link">Дом из блока</a> </li>
+                            </ul>
+                        </li>
+                        <li class="menu__item"> <a href="#" class="menu__link">Готовые проекты</a> </li>
+                        <li class="menu__item"> <a href="#" class="menu__link">Контакты</a> </li>
+                    </ul>
+                </nav>
+                <div class="phone navigation__phone">
+                    <div>
+                        <img src="img/phone.svg" alt="Phone" class="phone__icon">
+                    </div>
+                    <div>
+                        <a href="tel:+7 918 439 00 32" class="phone__tel">
+                            +7 918 439 00 32
+                        </a>
+                    </div>
+                </div>
+                <button id="btn-open" class="btn navigation__btn" type="submit">
+                    Заказать звонок
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div id="wrapper-modal">
+        <div id="overlay"></div>
+        <div id="modal-window">
+            <div id="btn-close" class="modal__close">
+                <img src="img/exit.svg" alt="">
+            </div>
+            <div class="content">
+                <form action="/" class="form modal__form">
+                    <h2 class="modal__title">Форма обратного звонка</h2>
+                    <p class="modal__text">
+                        Оставьте пожалуйста свое имя и телефон и мы свяжемся с вами в течении дня
+                    </p>
+                    <div class=" modal__item">
+                        <input id="name" class="modal__input  " type="text" placeholder=" ">
+                        <label class="modal__label  " for="name">Имя</label>
+                    </div>
+                    <div class="modal__item">
+                        <input id="tel" class="modal__input  " type="text" placeholder=" ">
+                        <label class="modal__label  " for="tel">Телефон</label>
+                    </div>
+                    <p class="form__subtitle modal__subtitle">Нажимая на кнопку вы даете согласие на обработку персональных данных и соглашаетесь с <b>политикой конфиденциальности</b></p>
+                    <button class="btn modal__btn" type="submit">Заказать звонок</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <section id="brick" class="brick">
+        <div class="container">
+            <div class="brick__offer">
+                <h1 class="brick__title">Дом из кирпича</h1>
+            </div>
+        </div>
+    </section>
+
+    <section id="price" class="price">
+        <div class="container">
+            <h2 class="price__title">Наши цены</h2>
+        </div>
+    </section>
+
+    <section id="calculator" class="calculator">
+        <div class="container">
+            <h2 class="calculator__title">Калькулятор расчета стоимости</h2>
+            <div class="calculator__wrapper">
+                <form class="calc" name="calc" action="">
+                    <div class="input__wrapper">
+                        <label for="square">Выберите площадь</label>
+                        <input class="input__square" type="text" name="square" id="square" placeholder="Площадь">
+                    </div>
+                    <div class="radio__wrapper">
+                        <div> 
+                            <input class="custom-radio" type="radio" name="op" id="box" value="box">
+                            <label for="box" name="op">Коробка</label>
+                        </div>
+                        <div>
+                            <input class="custom-radio" type="radio" name="op" id="clear" value="clear">
+                            <label for="clear" name="op">Чистовая отделка</label>
+                        </div>
+                        <div>
+                            <input class="custom-radio" type="radio" name="op" id="key" value="key">
+                            <label for="key" name="op">Под ключ</label>
+                        </div>
+                    </div>
+                    <button class="btn forms__btn" type="button" onclick="calculate()" value="Calculate">Расчитать стоимость</button>
+                </form>
+                <div class="calc__data ">
+                    <div class="calc__wrapper">
+                        <p class="calc__title">
+                            Площадь:
+                        </p>
+                        <h4 class="calc__text" id="squareRes"></h4>
+                    </div>
+                    <div class="calc__wrapper">
+                        <p class="calc__title">
+                            Комплектация:
+                        </p>
+                        <h4 class="calc__text" id="complektRes"></h4>
+                    </div>
+                    <div class="calc__wrapper">
+                        <p class="calc__title">
+                            Срок:
+                        </p>
+                        <h4 class="calc__text" id="dataRes"></h4>
+                    </div>
+                    <div class="calc__wrapper calc__wrapper_margin">
+                        <p class="calc__title">
+                            Стоимость типового проекта:
+                        </p>
+                        <h4 class="calc__text calc__text_bold" id="costRes"></h4>
+                    </div>
+                    <button type="button" class="btn forms__btn">Оставить заявку</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="brick-project" class="brick-project">
+        <div class="container">
+            <h2 class="brick-project__title">Проекты кирпичных домов</h2>
+        </div>
+    </section>
+
+    <section id="cta" class="cta">
+        <div class="container">
+            <h2 class="cta__title">Готовы обсудить проект?</h2>
+            <div class="cta__forms">
+                <form action="/" class="form">
+                    <p class="form__text">
+                        Оставьте свой номер телефона и мы поможем вам с выбором дома
+                    </p>
+                    <div class="input__item">
+                        <input id="name" class="form__input" type="text" placeholder=" ">
+                        <label class="form__label" for="name">Имя</label>
+                    </div>
+                    <div class="input__item">
+                        <input id="tel" class="form__input" type="text" placeholder=" ">
+                        <label class="form__label" for="tel">Телефон</label>
+                    </div>
+                    
+    
+                    <p class="form__subtitle">Нажимая на кнопку вы даете согласие на обработку персональных данных и соглашаетесь с <b>политикой конфиденциальности</b></p>
+                    <button class="btn form__btn" type="submit">Оставить заявку</button>
+                </form>
+                <img class="cta__img" src="img/formbg.jpg" alt="Небоскреб">
+            </div>
+        </div>
+    </section>
+    
+    <footer id="footer" class="footer">
+        <div class="container">
+            СЮДА ЗАКИНЬ СУКА ФУТЕР ИЗ ГЛАВНОЙ
+        </div>
+    </footer>
+
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
